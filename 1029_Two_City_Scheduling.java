@@ -6,11 +6,11 @@ class Solution {
         });
         int tot_cost = 0;
         for(int i=0; i<costs.length/2; i++){
-            cost = cost + costs[i][0];
+            tot_cost = tot_cost + costs[i][0];
         }
         
         for(int i=costs.length/2; i<costs.length; i++){
-            cost = cost + costs[i][1];
+            tot_cost = tot_cost + costs[i][1];
         }
         return tot_cost;
     }
